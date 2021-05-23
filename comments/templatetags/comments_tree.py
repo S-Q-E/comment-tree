@@ -21,10 +21,10 @@ def comments_filter(comments_list):
                     <small>{author}</small> | опкубликовано: {timestamp}
                     <hr>
                     <p>{text} | id={id}</p>
-                    <span><a href="#" class="reply" data-id="{id}" data-parent={parent_id}>Ответить</a></span>
+                    <a href="#" class="reply" data-id="{id}" data-parent={parent_id}>Ответить</a>
                     <form action="" method="POST" class="comment-form form-group" id="form-{id}" style="display:none;">
                         <textarea type="text" class="form-control" name="comment-text"></textarea><br>
-                        <input type="submit" class="btn btn-primary sumbint-reply" data-id="{id} data-submit-reply="{parent_id}" value="Отправить">
+                        <input type="submit" class="btn btn-primary submit-reply" data-id="{id}" data-submit-reply="{parent_id}" value="Отправить">
                     </form>
                 </div> 
             </li>
